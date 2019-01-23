@@ -14,8 +14,10 @@ _TODO: Should scaffold all of the models.  It will be confusing to novices if on
 
 
 ## Dependencies
-- mysql
-- See the `Gemfile` for the version of ruby and Rails
+- Sqlite3
+- Rails 5.2.2
+- Ruby 2.5.1
+
 
 
 ## To use:
