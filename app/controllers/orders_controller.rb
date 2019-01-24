@@ -1,10 +1,10 @@
 class OrdersController < ApplicationController
-  before_action :set_orders, only: [:show, :edit, :update, :destroy]
+  before_action :set_order, only: [:show, :edit, :update, :destroy]
 
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Orders.all
+    @orders = Order.all
   end
 
   # GET /orders/1
@@ -14,7 +14,7 @@ class OrdersController < ApplicationController
 
   # GET /orders/new
   def new
-    @orders = Orders.new
+    @order = Order.new
   end
 
   # GET /orders/1/edit
@@ -24,15 +24,15 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @orders = Orders.new(orders_params)
+    @order = Order.new(order_params)
 
     respond_to do |format|
-      if @orders.save
-        format.html { redirect_to @orders, notice: 'Orders was successfully created.' }
-        format.json { render :show, status: :created, location: @orders }
+      if @order.save
+        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+        format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
-        format.json { render json: @orders.errors, status: :unprocessable_entity }
+        format.json { render json: @order.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -41,12 +41,12 @@ class OrdersController < ApplicationController
   # PATCH/PUT /orders/1.json
   def update
     respond_to do |format|
-      if @orders.update(orders_params)
-        format.html { redirect_to @orders, notice: 'Orders was successfully updated.' }
-        format.json { render :show, status: :ok, location: @orders }
+      if @order.update(order_params)
+        format.html { redirect_to @order, notice: 'Order was successfully updated.' }
+        format.json { render :show, status: :ok, location: @order }
       else
         format.html { render :edit }
-        format.json { render json: @orders.errors, status: :unprocessable_entity }
+        format.json { render json: @order.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -54,21 +54,21 @@ class OrdersController < ApplicationController
   # DELETE /orders/1
   # DELETE /orders/1.json
   def destroy
-    @orders.destroy
+    @order.destroy
     respond_to do |format|
-      format.html { redirect_to orders_url, notice: 'Orders was successfully destroyed.' }
+      format.html { redirect_to orders_url, notice: 'Order was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_orders
-      @orders = Orders.find(params[:id])
+    def set_order
+      @order = Order.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def orders_params
-      params.require(:orders).permit(:date_submitted, :customer_id, :status, :subtotal, :shipping, :tax, :total)
+    def order_params
+      params.require(:order).permit(:date_submitted, :customer_id, :status, :subtotal, :shipping, :tax, :total)
     end
 end
