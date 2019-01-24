@@ -14,19 +14,19 @@ ActiveRecord::Schema.define(version: 2019_01_13_223417) do
 
   create_table "authors", force: :cascade do |t|
     t.string "first_name"
-    t.string "last_name"
+    t.string "last_name", null: false
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "books", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.integer "year_published"
     t.string "isbn"
-    t.float "price", default: 0.0, null: false
+    t.decimal "price", default: "0.0", null: false
     t.boolean "out_of_print", default: false
-    t.integer "views"
+    t.integer "views", default: 0, null: false
     t.integer "author_id"
     t.integer "supplier_id"
     t.datetime "created_at", null: false
@@ -44,9 +44,9 @@ ActiveRecord::Schema.define(version: 2019_01_13_223417) do
 
   create_table "customers", force: :cascade do |t|
     t.string "first_name"
-    t.string "last_name"
+    t.string "last_name", null: false
     t.string "title"
-    t.string "email"
+    t.string "email", null: false
     t.integer "visits", default: 0, null: false
     t.integer "orders_count", default: 0, null: false
     t.integer "lock_version"
@@ -57,20 +57,20 @@ ActiveRecord::Schema.define(version: 2019_01_13_223417) do
   create_table "orders", force: :cascade do |t|
     t.datetime "date_submitted"
     t.integer "customer_id"
-    t.integer "status"
-    t.float "subtotal"
-    t.float "shipping"
-    t.float "tax"
-    t.float "total"
+    t.integer "status", null: false
+    t.decimal "subtotal", default: "0.0", null: false
+    t.decimal "shipping", default: "0.0", null: false
+    t.decimal "tax", default: "0.0", null: false
+    t.decimal "total", default: "0.0", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_orders_on_customer_id"
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.string "title"
-    t.string "body"
-    t.integer "rating"
+    t.string "title", null: false
+    t.text "body"
+    t.integer "rating", null: false
     t.integer "state", default: 0
     t.integer "customer_id"
     t.integer "book_id"
@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(version: 2019_01_13_223417) do
   end
 
   create_table "suppliers", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
