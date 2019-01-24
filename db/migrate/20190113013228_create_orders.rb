@@ -6,10 +6,10 @@ class CreateOrders < ActiveRecord::Migration[5.2]
       t.belongs_to :customer
       t.integer :status, null: false
 
-      t.double :subtotal, default: 0.00, null: false
-      t.double :shipping, default: 0.00, null: false
-      t.double :tax, default: 0.00, null: false
-      t.double :total, default: 0.00, null: false
+      t.decimal :subtotal, default: 0.00, null: false
+      t.decimal :shipping, default: 0.00, null: false
+      t.decimal :tax, default: 0.00, null: false
+      t.decimal :total, default: 0.00, null: false
 
       t.timestamps
     end
