@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :state %>
-    <%= form.number_field :state %>
+    <%= form.select :state, Review.states.keys %>
   </div>
 
 
