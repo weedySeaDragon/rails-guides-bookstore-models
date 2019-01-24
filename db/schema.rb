@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_01_13_223417) do
     t.string "title", null: false
     t.integer "year_published"
     t.string "isbn"
-    t.decimal "price", default: "0.0", null: false
+    t.decimal "price", precision: 10, scale: 2, default: "0.0", null: false
     t.boolean "out_of_print", default: false
     t.integer "views", default: 0, null: false
     t.integer "author_id"
@@ -58,10 +58,10 @@ ActiveRecord::Schema.define(version: 2019_01_13_223417) do
     t.datetime "date_submitted"
     t.integer "customer_id"
     t.integer "status", null: false
-    t.decimal "subtotal", default: "0.0", null: false
-    t.decimal "shipping", default: "0.0", null: false
-    t.decimal "tax", default: "0.0", null: false
-    t.decimal "total", default: "0.0", null: false
+    t.decimal "subtotal", precision: 10, scale: 2, default: "0.0", null: false
+    t.decimal "shipping", precision: 10, scale: 2, default: "0.0", null: false
+    t.decimal "tax", precision: 10, scale: 2, default: "0.0", null: false
+    t.decimal "total", precision: 12, scale: 2, default: "0.0", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_orders_on_customer_id"

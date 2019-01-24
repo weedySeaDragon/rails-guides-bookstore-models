@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string :title, null: false
       t.integer :year_published
       t.string :isbn
-      t.decimal :price, precision: 16, scale: 2, default: 0, null: false
+      t.decimal :price, precision: 10, scale: 2, default: 0, null: false
 
       t.boolean :out_of_print, default: false
 
