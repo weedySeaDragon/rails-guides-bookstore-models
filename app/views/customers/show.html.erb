@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Title:</strong>
+  <%= @customer.title %>
+</p>
+
+<p>
   <strong>First name:</strong>
   <%= @customer.first_name %>
 </p>
@@ -11,23 +16,18 @@
 </p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @customer.title %>
-</p>
-
-<p>
   <strong>Email:</strong>
   <%= @customer.email %>
 </p>
 
 <p>
-  <strong>Visits:</strong>
-  <%= @customer.visits %>
+  <strong>Orders count:</strong>
+  <%= @customer.orders_count %>
 </p>
 
 <p>
-  <strong>Orders count:</strong>
-  <%= @customer.orders_count %>
+  <strong>Visits:</strong>
+  <%= @customer.visits %>
 </p>
 
 <p>

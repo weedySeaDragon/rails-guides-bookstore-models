@@ -1,10 +1,10 @@
-<%= form_with(model: orders, local: true) do |form| %>
-  <% if orders.errors.any? %>
+<%= form_with(model: @order, local: true) do |form| %>
+  <% if @order.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(orders.errors.count, "error") %> prohibited this orders from being saved:</h2>
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this orders from being saved:</h2>
 
       <ul>
-      <% orders.errors.full_messages.each do |message| %>
+      <% @order.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -18,13 +18,17 @@
 
   <div class="field">
     <%= form.label :customer_id %>
-    <%= form.text_field :customer_id %>
+    <%= form.select(:customer_id, Customer.all.collect {|c| [ c.display_name, c.id ] }) %>
   </div>
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.number_field :status %>
+    <%= form.select :status, Order.statuses.keys %>
   </div>
+
+  <h4>Books:</h4>
+  <%= render 'books_and_prices_table', order: @order %>
+
 
   <div class="field">
     <%= form.label :subtotal %>

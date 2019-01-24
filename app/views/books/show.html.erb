@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Author:</strong>
+  <%= @book.author.display_name %>
+</p>
+
+<p>
   <strong>Year published:</strong>
   <%= @book.year_published %>
 </p>
@@ -13,6 +18,11 @@
 <p>
   <strong>Isbn:</strong>
   <%= @book.isbn %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
 </p>
 
 <p>
@@ -26,18 +36,8 @@
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @book.price %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
-
-<p>
   <strong>Supplier:</strong>
-  <%= @book.supplier %>
+  <%= @book.supplier.name %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |

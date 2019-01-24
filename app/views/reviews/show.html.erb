@@ -1,34 +1,34 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Book:</strong>
+  <%= @review.book.title %>
+</p>
+
+<p>
   <strong>Title:</strong>
-  <%= @reviews.title %>
+  <%= @review.title %>
 </p>
 
 <p>
   <strong>Body:</strong>
-  <%= @reviews.body %>
+  <%= @review.body %>
 </p>
 
 <p>
   <strong>Rating:</strong>
-  <%= @reviews.rating %>
+  <%= @review.rating %>
 </p>
 
 <p>
   <strong>State:</strong>
-  <%= @reviews.state %>
+  <%= @review.state %>
 </p>
 
 <p>
   <strong>Customer:</strong>
-  <%= @reviews.customer %>
+  <%= @review.customer.display_name %>
 </p>
 
-<p>
-  <strong>Book:</strong>
-  <%= @reviews.book %>
-</p>
-
-<%= link_to 'Edit', edit_reviews_path(@reviews) %> |
-<%= link_to 'Back', reviews_path %>
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', review_path %>

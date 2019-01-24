@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
     <%= form.label :first_name %>
     <%= form.text_field :first_name %>
   </div>
@@ -22,23 +27,18 @@
   </div>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
     <%= form.label :email %>
     <%= form.text_field :email %>
   </div>
 
   <div class="field">
-    <%= form.label :visits %>
-    <%= form.number_field :visits %>
+    <%= form.label :orders_count %>
+    <%= form.number_field :orders_count %>
   </div>
 
   <div class="field">
-    <%= form.label :orders_count %>
-    <%= form.number_field :orders_count %>
+    <%= form.label :visits %>
+    <%= form.number_field :visits %>
   </div>
 
   <div class="field">

@@ -5,28 +5,26 @@
 <table>
   <thead>
     <tr>
+      <th>Book</th>
       <th>Title</th>
-      <th>Body</th>
       <th>Rating</th>
       <th>State</th>
       <th>Customer</th>
-      <th>Book</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @reviews.each do |reviews| %>
+    <% @reviews.each do |review| %>
       <tr>
-        <td><%= reviews.title %></td>
-        <td><%= reviews.body %></td>
-        <td><%= reviews.rating %></td>
-        <td><%= reviews.state %></td>
-        <td><%= reviews.customer %></td>
-        <td><%= reviews.book %></td>
-        <td><%= link_to 'Show', reviews %></td>
-        <td><%= link_to 'Edit', edit_reviews_path(reviews) %></td>
-        <td><%= link_to 'Destroy', reviews, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= review.book.title %></td>
+        <td><%= review.title %></td>
+        <td><%= review.rating %></td>
+        <td><%= review.state %></td>
+        <td><%= review.customer.display_name %></td>
+        <td><%= link_to 'Show', review %></td>
+        <td><%= link_to 'Edit', edit_review_path(review) %></td>
+        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Reviews', new_reviews_path %>
+<%= link_to 'New Revies', new_review_path %>

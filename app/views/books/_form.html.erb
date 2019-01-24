@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :author_id %>
+    <%= form.select(:author_id, Author.all.collect {|a| [ a.display_name, a.id ] }) %>
+  </div>
+
+  <div class="field">
     <%= form.label :year_published %>
     <%= form.number_field :year_published %>
   </div>
@@ -24,6 +29,11 @@
   <div class="field">
     <%= form.label :isbn %>
     <%= form.text_field :isbn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
   </div>
 
   <div class="field">
@@ -37,18 +47,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
-  </div>
-
-  <div class="field">
-    <%= form.label :author_id %>
-    <%= form.text_field :author_id %>
-  </div>
-
-  <div class="field">
     <%= form.label :supplier_id %>
-    <%= form.text_field :supplier_id %>
+    <%= form.select(:supplier_id, Supplier.all.collect {|s| [ s.name, c.id ] }) %>
   </div>
 
   <div class="actions">

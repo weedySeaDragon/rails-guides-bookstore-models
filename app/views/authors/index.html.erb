@@ -5,9 +5,9 @@
 <table>
   <thead>
     <tr>
+      <th>Title</th>
       <th>First name</th>
       <th>Last name</th>
-      <th>Title</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,9 +15,9 @@
   <tbody>
     <% @authors.each do |author| %>
       <tr>
+        <td><%= author.title %></td>
         <td><%= author.first_name %></td>
         <td><%= author.last_name %></td>
-        <td><%= author.title %></td>
         <td><%= link_to 'Show', author %></td>
         <td><%= link_to 'Edit', edit_author_path(author) %></td>
         <td><%= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -2,38 +2,42 @@
 
 <p>
   <strong>Date submitted:</strong>
-  <%= @orders.date_submitted %>
+  <%= @order.date_submitted %>
 </p>
 
 <p>
   <strong>Customer:</strong>
-  <%= @orders.customer %>
+  <%= @order.customer.display_name %>
 </p>
 
 <p>
   <strong>Status:</strong>
-  <%= @orders.status %>
+  <%= @order.status %>
 </p>
+
+<h4>Books:</h4>
+<%= render 'books_and_prices_table', order: @order %>
+
 
 <p>
   <strong>Subtotal:</strong>
-  <%= @orders.subtotal %>
+  <%= @order.subtotal %>
 </p>
 
 <p>
   <strong>Shipping:</strong>
-  <%= @orders.shipping %>
+  <%= @order.shipping %>
 </p>
 
 <p>
   <strong>Tax:</strong>
-  <%= @orders.tax %>
+  <%= @order.tax %>
 </p>
 
 <p>
   <strong>Total:</strong>
-  <%= @orders.total %>
+  <%= @order.total %>
 </p>
 
-<%= link_to 'Edit', edit_orders_path(@orders) %> |
+<%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>

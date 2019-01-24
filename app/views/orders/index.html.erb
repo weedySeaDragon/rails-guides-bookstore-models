@@ -17,18 +17,18 @@
   </thead>
 
   <tbody>
-    <% @orders.each do |orders| %>
+    <% @orders.each do |order| %>
       <tr>
-        <td><%= orders.date_submitted %></td>
-        <td><%= orders.customer %></td>
-        <td><%= orders.status %></td>
-        <td><%= orders.subtotal %></td>
-        <td><%= orders.shipping %></td>
-        <td><%= orders.tax %></td>
-        <td><%= orders.total %></td>
-        <td><%= link_to 'Show', orders %></td>
-        <td><%= link_to 'Edit', edit_orders_path(orders) %></td>
-        <td><%= link_to 'Destroy', orders, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= order.date_submitted %></td>
+        <td><%= order.customer.display_name %></td>
+        <td><%= order.status %></td>
+        <td><%= order.subtotal %></td>
+        <td><%= order.shipping %></td>
+        <td><%= order.tax %></td>
+        <td><%= order.total %></td>
+        <td><%= link_to 'Show', order %></td>
+        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Orders', new_orders_path %>
+<%= link_to 'New Order', new_order_path %>
