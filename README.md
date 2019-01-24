@@ -41,7 +41,5 @@ If you want to re-seed with new sample data, you can use the task `ae:railsguide
 
 ## License
 
-MIT license
-
-_(TODO)_
+The authors and contributors have agreed to license all other software under the MIT license, an open source free software license. See the file named [LICENSE](LICENSE) which includes a disclaimer of warranty.
 
