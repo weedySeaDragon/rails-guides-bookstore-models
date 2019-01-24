@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date submitted:</strong>
+  <%= @orders.date_submitted %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @orders.customer %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @orders.status %>
+</p>
+
+<p>
+  <strong>Subtotal:</strong>
+  <%= @orders.subtotal %>
+</p>
+
+<p>
+  <strong>Shipping:</strong>
+  <%= @orders.shipping %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @orders.tax %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @orders.total %>
+</p>
+
+<%= link_to 'Edit', edit_orders_path(@orders) %> |
+<%= link_to 'Back', orders_path %>

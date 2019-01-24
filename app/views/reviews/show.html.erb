@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @reviews.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @reviews.body %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @reviews.rating %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @reviews.state %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @reviews.customer %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @reviews.book %>
+</p>
+
+<%= link_to 'Edit', edit_reviews_path(@reviews) %> |
+<%= link_to 'Back', reviews_path %>
