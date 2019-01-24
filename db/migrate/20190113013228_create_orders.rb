@@ -4,12 +4,12 @@ class CreateOrders < ActiveRecord::Migration[5.2]
 
       t.timestamp :date_submitted
       t.belongs_to :customer
-      t.integer :status
+      t.integer :status, null: false
 
-      t.float :subtotal
-      t.float :shipping
-      t.float :tax
-      t.float :total
+      t.double :subtotal, default: 0.00, null: false
+      t.double :shipping, default: 0.00, null: false
+      t.double :tax, default: 0.00, null: false
+      t.double :total, default: 0.00, null: false
 
       t.timestamps
     end
