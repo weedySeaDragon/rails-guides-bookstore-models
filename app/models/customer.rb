@@ -4,6 +4,9 @@ class Customer < ApplicationRecord
 
   scope :frequent_buyers, -> { where 'orders_count > 150' }
 
+  include Person
+
+
   # The reviews_to_publish method below is expected to return a Relation.
   # It might be called like this:
   # @pub_reviews = customer.reviews_to_publish.where(id: params[:id])
