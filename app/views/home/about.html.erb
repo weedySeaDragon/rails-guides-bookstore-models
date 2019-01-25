@@ -1,28 +1,49 @@
 <h1>About</h1>
 
-<p class="lead">I created this to help people understand the examples in the Rails Guide.</p>
+<p class="lead">I created this to help people understand the examples in the Rails
+  Guide.</p>
 
-<p>I wanted people to have a chance to work with the "Bookstore models" (Author, Books, Customer, Order, Review, Supplier)
-used in the Rails Guide "ActiveRecord Querying Interface".  Providing a simple Rails application with the models already defined means that people can simply clone this repo and quickly start to explore the models and example queries.
-  I wanted to save people -- especially novices who are coming up many learning curves at once -- the time and effort needed to figure out exactly how to define and scaffold the models used in the examples.</p>
+<p><strong>The goal is to present the models with just enough data so the examples can be
+  run and explored.</strong></p>
 
-<p>This provides a way to create data to work with (via seeding the database).</p>
+<p>I want people to have a chance to work with the "Bookstore models" (Author, Books,
+  Customer, Order, Review, Supplier)
+  used in the  <%= link_to  "Rails Guide: ActiveRecord Querying Interface.",
+                            "https://guides.rubyonrails.org/active_record_querying.html",
+                            target: "_blank", rel: "nofollow"  %>. I want to save people --
+  especially novices who are coming up many learning curves at once -- the time and effort
+  needed to figure out exactly how to define and scaffold the models used in the
+  examples.</p>
 
-<p>This is _not_ a complete or efficient Rails application.  This is a very bare-bones Rails application.</p>
+<p><strong>This is a very simple, bare-bones Rails application with the models already defined.
+  You can simply clone this repo, generate the data, and start working with the
+  examples.</strong></p>
 
-<p>The focus is on presenting models just so the examples can be run, and a way to generate enough data to work with them.</p>
-
-<p>The focus is _not_ on presenting this as a well-designed Rails website. Only very minimal layout (view) work was done.
-  (In a more realistic Rails application, lots of DRYing up would be done; more gems would be used; some models would be designed differently; I18n would be used, etc.)</p>
-<p>This is meant just as a starting point.</p>
-
-<p>You can use the rails console (rails c) to run the queries given in the examples in the guide.</p>
+<p>You can use the rails console to run the queries given in the examples in the
+  guide.</p>
 <p>You can also run the rails server and the see the data in web pages.</p>
 
 
-<p>Is this helpful?  How could it be made _more_ helpful?</p>
-<p>Comments and suggestions to the Github repo issues queue: </p>
+<!--
+<h5>These are the Bookstore models used in the examples:</h5>
 
-<p>Many thanks to Chris Oliver's Jumpstart template (GoRails/...)</p>
+<div id="models_erd">
+  <%= image_tag('RailsGuide_AR_Querying_bookstore_models.png',
+                width: 650,
+                alt:   'ERD diagram all of the model classes and their relationships to each other.') %>
+</div>
+-->
+
+<p>This is <em>not</em> a complete or efficient Rails application.
+  Only very minimal layout (view) work was done.
+  (In a more realistic Rails application, lots of DRYing up would be done; more gems would
+  be used; I18n would be used, etc. Many of the models have methods and scopes that are there only to illustrate concepts or code.  They wouldn't necessarily be designed like that in a real Rails application.)</p>
+<p>This is meant just as a starting point.</p>
+
+<p>Is this helpful? How could it be made <em>more</em> helpful?</p>
+<p>Please post comments and suggestions to the <%= link_to "Github repo issues queue.", "https://github.com/weedySeaDragon/rails-guides-bookstore-models", target: "_blank", rel: "nofollow"  %></p>
+
+<p>This uses CSS and some basics from Chris Oliver's <em>Jumpstart template.</em> <%= link_to "You can grab the code yourself and watch his video on how to use it.",
+                                                                 "https://gorails.com/episodes/rails-application-templates", target: "_blank", rel: "nofollow" %></p>
 
 
