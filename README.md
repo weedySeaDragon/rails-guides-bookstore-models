@@ -10,7 +10,7 @@ This has methods for seeding the models with sample data
 
 _TODO: Should scaffold all of the models.  It will be confusing to novices if only some of the typical Rails code (the models) exists._
 
-![diagram of all of the Bookstore models](RailsGuide_AR_Querying_bookstore_models.png)
+![diagram of all of the Bookstore models](app/assets/images/RailsGuide_AR_Querying_bookstore_models.png)
 
 
 ## Dependencies
