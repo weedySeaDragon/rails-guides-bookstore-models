@@ -1,0 +1,19 @@
+id,title,year_published,isbn,price,out_of_print,views,author_id,supplier_id,created_at,updated_at
+1,Highly-Available Distributed Services and Fault-Tolerant Distributed Garbage Collection,1986,"",45.00,0,527,1,5,2019-01-24 12:10:27.760414,2019-01-24 23:00:25.180714
+2,Abstraction and Specification in Program Development,1986,,45.00,0,526,1,11,2019-01-24 12:10:27.764706,2019-01-24 12:10:27.764706
+3,The Design of the Venus Operating System,1971,,100.00,1,922,1,6,2019-01-24 12:10:27.768607,2019-01-24 12:10:27.768607
+4,A New Definition of the Subtype Relation,1993,,800.00,1,694,1,10,2019-01-24 12:10:27.772421,2019-01-24 12:10:27.772421
+5,Programming with Abstract Data Types,1974,"",45.00,1,532,1,2,2019-01-24 12:10:27.775801,2019-01-24 23:02:33.944983
+6,Refactoring: Improving the Design of Existing Code (2nd Edition),2018,,45.00,0,539,2,9,2019-01-24 12:10:27.781296,2019-01-24 12:10:27.781296
+7,Patterns of Enterprise Application Architecture,2002,,45.00,0,755,2,12,2019-01-24 12:10:27.784661,2019-01-24 12:10:27.784661
+8,Analysis Patterns: Reusable Object Models,1986,,45.00,0,941,2,12,2019-01-24 12:10:27.788139,2019-01-24 12:10:27.788139
+9,Spread Spectrum: Hedy Lamarr and the mobile phone,2006,,28.00,0,198,3,6,2019-01-24 12:10:27.793902,2019-01-24 12:10:27.793902
+10,Beautiful Invention: A Novel of Hedy Lamarr,2018,,22.22,0,824,4,6,2019-01-24 12:10:27.800236,2019-01-24 12:10:27.800236
+11,"Hedy's Folly: The Life and Breakthrough Inventions of Hedy Lamarr, the Most Beautiful Woman in the World",2011,,25.00,0,414,5,11,2019-01-24 12:10:27.804954,2019-01-24 12:10:27.804954
+12,Clean Code: A Handbook of Agile Software Craftsmanship,2008,,31.56,0,343,6,7,2019-01-24 12:10:27.810863,2019-01-24 12:10:27.810863
+13,The Mythical Man-Month: Essays on Software Engineering,1995,,24.95,0,864,7,8,2019-01-24 12:10:27.815871,2019-01-24 12:10:27.815871
+14,Domain-Driven Design: Tackling Complexity in the Heart of Software,2003,,58.00,0,683,8,12,2019-01-24 12:10:27.821015,2019-01-24 12:10:27.821015
+15,Agile Retrospectives: Making Good Teams Great,2003,,21.54,0,568,9,10,2019-01-24 12:10:27.826378,2019-01-24 12:10:27.826378
+16,Game Design Workshop: A Playcentric Approach to Creating Innovative Games,2018,,66.00,0,832,10,3,2019-01-24 12:10:27.831350,2019-01-24 12:10:27.831350
+17,Peopleware: Productive Projects and Teams,2013,,38.00,0,104,11,2,2019-01-24 12:10:27.836089,2019-01-24 12:10:27.836089
+18,Extreme Programming Explained: Embrace Change,2004,,43.00,0,5,12,10,2019-01-24 12:10:27.840629,2019-01-24 12:10:27.840629

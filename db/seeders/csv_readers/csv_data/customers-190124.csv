@@ -1,0 +1,15 @@
+id,first_name,last_name,title,email,visits,orders_count,lock_version,created_at,updated_at
+1,Bernice,Sandler,Dr.,bernice_sandler@example.com,0,1,3,2019-01-24 12:10:27.851680,2019-01-24 12:10:27.851680
+2,Willie,Hobbs Moore,Dr.,willie_hobbs moore@example.com,0,0,0,2019-01-24 12:10:27.855598,2019-01-24 12:10:27.855598
+3,Ashley,Engelund,"",ashley_engelund@example.com,0,2,2,2019-01-24 12:10:27.857838,2019-01-24 12:10:27.857838
+4,Susan,Kare,"",susan_kare@example.com,0,1,1,2019-01-24 12:10:27.860166,2019-01-24 12:10:27.860166
+5,Kimberly,Bryant,"",kimberly_bryant@example.com,0,0,0,2019-01-24 12:10:27.865933,2019-01-24 12:10:27.865933
+6,Sylvia,Trimble Bozeman,Dr.,sylvia_trimble bozeman@example.com,0,0,0,2019-01-24 12:10:27.894230,2019-01-24 12:10:27.894230
+7,Katherine,Johnson,"",katherine_johnson@example.com,0,1,1,2019-01-24 12:10:27.897528,2019-01-24 12:10:27.897528
+8,Patricia,Cowings,Dr.,patricia_cowings@example.com,0,3,3,2019-01-24 12:10:27.899945,2019-01-24 12:10:27.899945
+9,Angie,Turner King,Dr.,angie_turner king@example.com,0,1,1,2019-01-24 12:10:27.902275,2019-01-24 12:10:27.902275
+10,Ryan,Bigg,"",ryan_bigg@example.com,0,0,0,2019-01-24 12:10:27.904499,2019-01-24 12:10:27.904499
+11,Latany,Sweeney,Dr.,latany_sweeney@example.com,0,2,2,2019-01-24 12:10:27.906839,2019-01-24 12:10:27.906839
+12,Lisette,Titre-Montgomery,"",lisette_titre_montgomery@example.com,0,0,0,2019-01-24 12:10:27.909173,2019-01-24 12:10:27.909173
+13,Jane,Wright,Dr.,jane_wright@example.com,0,1,1,2019-01-24 12:10:27.911437,2019-01-24 12:10:27.911437
+14,Carolyn,Parker,Dr.,carolyn_parker@example.com,0,1,1,2019-01-24 12:10:27.913722,2019-01-24 12:10:27.913722
