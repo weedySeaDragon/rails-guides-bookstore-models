@@ -39,10 +39,10 @@ class OrdersSeeder
                          if ashley
                            liskov       = Author.find_by(last_name: 'Liskov')
                            liskov_books = Book.where(author: liskov)
-                           order_for(ashley, liskov_books, 287.15, 12.00)
+                           order_for(ashley, liskov_books, 12.00)
 
                            refactoring = Book.where("title LIKE 'Refactoring: Improving the Design of Existing Code%' ")
-                           order_for(ashley, refactoring, 42.00, 6.00)
+                           order_for(ashley, refactoring, 6.00)
                          end
 
                        end
@@ -53,7 +53,7 @@ class OrdersSeeder
                          dr_sandler = Customer.find_by(last_name: 'Sandler')
                          if dr_sandler
                            spread_spectrum = Book.where(title: "Spread Spectrum: Hedy Lamarr and the mobile phone")
-                           order_for(dr_sandler, spread_spectrum, 35.00, 0)
+                           order_for(dr_sandler, spread_spectrum, 0)
                          end
 
                        end
@@ -67,15 +67,14 @@ class OrdersSeeder
                          num_books = Random.rand(1..5)
                          num_books.times { books << Book.all.sample }
 
-                         subtotal        = books.inject(0.00) { |total_price, book| total_price + book.price }.round(2)
                          random_shipping = Random.rand(0..(num_books * 6.99)).round(2)
 
-                         order_for(customer, books, subtotal, random_shipping)
-
+                         order_for(customer, books, random_shipping)
                        end
 
 
-  private_class_method def self.order_for(customer, books, subtotal, shipping)
+  private_class_method def self.order_for(customer, books, shipping)
+                         subtotal = books.inject(0){|sum, book| sum + book.price }.round(2)
                          tax   = tax_for(subtotal)
                          total = total(subtotal, tax)
 
