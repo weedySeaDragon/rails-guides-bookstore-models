@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   resources :suppliers
   resources :authors
 
-  root to: 'books#index'
+  get '/about', to: 'home#about'
+  get '/terms', to: 'home#terms'
+
+  root to: 'home#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
