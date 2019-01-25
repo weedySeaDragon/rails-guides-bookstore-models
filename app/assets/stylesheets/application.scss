@@ -29,6 +29,11 @@ body .container {
   padding-bottom: 2rem;
 }
 
+.price {
+  text-align: right;
+}
+
+
 table {
   thead {
     vertical-align: bottom;
@@ -39,10 +44,6 @@ table {
     padding-right: 0.8rem;
   }
 
-  th.price,
-  td.price {
-    text-align: right;
-  }
 }
 
 
