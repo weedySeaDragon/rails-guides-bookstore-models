@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<h1>Author</h1>
 
 <p>
   <strong>Title:</strong>
@@ -15,6 +15,4 @@
   <%= @author.last_name %>
 </p>
 
-
-<%= link_to 'Edit', edit_author_path(@author) %> |
-<%= link_to 'Back', authors_path %>
+<%= render 'shared/action_buttons_edit_back', item: 'author', edit_path: edit_author_path(@author), items: 'authors', back_to_path: authors_path %>

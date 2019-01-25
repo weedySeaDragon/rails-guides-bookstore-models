@@ -1,0 +1,10 @@
+<%# This partial expects the following locals:                                               %>
+<%#  item: string to use in the "Show this " text (typically the model name)                 %>
+<%#  show_path: path for editing the (an) object                                             %>
+<%#  items: string to use in the "Back to all " text (typically the pluralized model name)   %>
+<%#  back_to_path: path for the list of all objects (typically the index path for the class) %>
+
+<div class="action-buttons">
+  <%= render 'shared/link_button', text: "Show this #{item}", path: show_path %>
+  <%= render 'shared/link_button', text: "Back to all #{items}", path: back_to_path %>
+</div>

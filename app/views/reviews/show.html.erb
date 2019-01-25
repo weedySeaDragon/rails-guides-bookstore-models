@@ -1,4 +1,5 @@
-<p id="notice"><%= notice %></p>
+<h1>Review</h1>
+
 
 <p>
   <strong>Book:</strong>
@@ -30,5 +31,5 @@
   <%= @review.customer.display_name %>
 </p>
 
-<%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+
+<%= render 'shared/action_buttons_edit_back', item: 'review', edit_path: edit_review_path(@review), items: 'reviews', back_to_path: reviews_path %>

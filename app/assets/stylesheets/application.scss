@@ -1,0 +1,66 @@
+// $navbar-default-bg: #312312;
+// $light-orange: #ff8c00;
+// $navbar-default-color: $light-orange;
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap";
+@import "sticky-footer";
+@import "authors";
+@import "books";
+@import "customers";
+@import "orders";
+@import "reviews";
+@import "suppliers";
+
+
+// Fixes bootstrap nav-brand container overlap
+@include media-breakpoint-down(xs) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+body > .alert {
+  margin-bottom: 0;
+}
+
+body .container {
+  padding-bottom: 2rem;
+}
+
+table {
+  thead {
+    vertical-align: bottom;
+  }
+
+  th,
+  td {
+    padding-right: 0.8rem;
+  }
+
+  th.price,
+  td.price {
+    text-align: right;
+  }
+}
+
+
+.index table {
+  font-size: 0.85rem;
+}
+
+.action-buttons {
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 1rem;
+
+  .container {
+    padding-bottom: 0;
+  }
+
+
+  font-size: 0.85rem;
+}

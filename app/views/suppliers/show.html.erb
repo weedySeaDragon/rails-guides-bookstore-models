@@ -1,9 +1,10 @@
-<p id="notice"><%= notice %></p>
+<h1>Supplier</h1>
+
 
 <p>
   <strong>Name:</strong>
   <%= @supplier.name %>
 </p>
 
-<%= link_to 'Edit', edit_supplier_path(@supplier) %> |
-<%= link_to 'Back', suppliers_path %>
+
+<%= render 'shared/action_buttons_edit_back', item: 'supplier', edit_path: edit_supplier_path(@supplier), items: 'suppliers', back_to_path: suppliers_path %>

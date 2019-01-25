@@ -2,4 +2,4 @@
 
 <%= render 'form', book: @book %>
 
-<%= link_to 'Back', books_path %>
+<%= render 'shared/action_buttons_back', items: 'books', back_to_path: books_path %>

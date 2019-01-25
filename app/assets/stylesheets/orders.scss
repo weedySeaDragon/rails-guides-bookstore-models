@@ -1,3 +1,30 @@
 // Place all the styles related to the orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.books-ordered {
+
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+
+  .books-ordered-title {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.12rem;
+  }
+
+  table {
+    border: 1pt solid black;
+
+    th {
+      border: 1pt solid black;
+      font-size: 0.85rem;
+    }
+
+    td {
+      border: 1pt solid gray;
+    }
+
+  }
+
+}

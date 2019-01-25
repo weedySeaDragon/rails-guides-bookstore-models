@@ -2,5 +2,4 @@
 
 <%= render 'form', customer: @customer %>
 
-<%= link_to 'Show', @customer %> |
-<%= link_to 'Back', customers_path %>
+<%= render 'shared/action_buttons_show_back', item: 'customer', show_path: @customer, items: 'customers', back_to_path: customers_path %>

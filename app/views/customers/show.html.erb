@@ -1,4 +1,5 @@
-<p id="notice"><%= notice %></p>
+<h1>Customer</h1>
+
 
 <p>
   <strong>Title:</strong>
@@ -35,5 +36,4 @@
   <%= @customer.lock_version %>
 </p>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<%= render 'shared/action_buttons_edit_back', item: 'customer', edit_path: edit_customer_path(@customer), items: 'customers', back_to_path: customers_path %>

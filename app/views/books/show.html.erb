@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<h1>Book</h1>
 
 <p>
   <strong>Title:</strong>
@@ -40,5 +40,5 @@
   <%= @book.supplier.name %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+
+<%= render 'shared/action_buttons_edit_back', item: 'book', edit_path: edit_book_path(@book), items: 'books', back_to_path: books_path %>

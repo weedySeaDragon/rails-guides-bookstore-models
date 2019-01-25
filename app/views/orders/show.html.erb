@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<h1>Order</h1>
 
 <p>
   <strong>Date submitted:</strong>
@@ -15,9 +15,10 @@
   <%= @order.status %>
 </p>
 
-<h4>Books:</h4>
-<%= render 'books_and_prices_table', order: @order %>
-
+<div class="books-ordered">
+  <p class="books-ordered-title">Books ordered:</p>
+  <%= render 'books_and_prices_table', order: @order %>
+</div>
 
 <p>
   <strong>Subtotal:</strong>
@@ -39,5 +40,5 @@
   <%= @order.total %>
 </p>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+
+<%= render 'shared/action_buttons_edit_back', item: 'order', edit_path: edit_order_path(@order), items: 'orders', back_to_path: orders_path %>

@@ -1,15 +1,4 @@
 <%= form_with(model: @order, local: true) do |form| %>
-  <% if @order.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this orders from being saved:</h2>
-
-      <ul>
-      <% @order.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
   <div class="field">
     <%= form.label :date_submitted %>
@@ -18,7 +7,7 @@
 
   <div class="field">
     <%= form.label :customer_id %>
-    <%= form.select(:customer_id, Customer.all.collect {|c| [ c.display_name, c.id ] }) %>
+    <%= form.select(:customer_id, Customer.all.collect { |c| [c.display_name, c.id] }) %>
   </div>
 
   <div class="field">
@@ -26,9 +15,10 @@
     <%= form.select :status, Order.statuses.keys %>
   </div>
 
-  <h4>Books:</h4>
-  <%= render 'books_and_prices_table', order: @order %>
-
+  <div class="books-ordered">
+    <p class="books-ordered-title">Books ordered:</p>
+    <%= render 'books_and_prices_table', order: @order %>
+  </div>
 
   <div class="field">
     <%= form.label :subtotal %>
@@ -51,6 +41,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit(nil, { class: "btn btn-primary" }) %>
   </div>
 <% end %>

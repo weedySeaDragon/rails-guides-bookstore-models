@@ -28,7 +28,8 @@ class ReviewsController < ApplicationController
   # POST /reviews
   # POST /reviews.json
   def create
-    @reviews = Review.new(review_params)
+    @review = Review.new(review_params)
+    @review.rating = (@review.rating.nil? ? 0 : @review_rating)
 
     respond_to do |format|
       if @review.save

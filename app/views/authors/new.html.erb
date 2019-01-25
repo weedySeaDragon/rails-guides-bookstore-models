@@ -2,4 +2,4 @@
 
 <%= render 'form', author: @author %>
 
-<%= link_to 'Back', authors_path %>
+<%= render 'shared/action_buttons_back', items: 'authors', back_to_path: authors_path %>

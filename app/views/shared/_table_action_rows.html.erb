@@ -1,0 +1,9 @@
+<%# This partial expects the following locals:                                              %>
+<%#  item: the object to link to or destroy                                                 %>
+<%#  edit_path: path for editing the (an) object                                            %>
+<%#  destroy_name: string to use in the destroy confirmation text (typically the display )  %>
+<%#    string for an item (e.g. the full name of a person, title for a books, etc)          %>
+
+<td class="show"><%= link_to 'Show', item %></td>
+<td class="edit"><%= link_to 'Edit', edit_path %></td>
+<td class="destroy"><%= link_to 'Destroy', item, method: :delete, data: { confirm: "Are you sure you want to delete #{destroy_name}?" } %></td>

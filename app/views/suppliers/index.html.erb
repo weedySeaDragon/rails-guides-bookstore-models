@@ -1,12 +1,10 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Suppliers</h1>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
-      <th colspan="3"></th>
+      <%= render 'shared/table_actions_theaders' %>
     </tr>
   </thead>
 
@@ -14,14 +12,12 @@
     <% @suppliers.each do |supplier| %>
       <tr>
         <td><%= supplier.name %></td>
-        <td><%= link_to 'Show', supplier %></td>
-        <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
-        <td><%= link_to 'Destroy', supplier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%= render 'shared/table_action_rows', item: supplier, edit_path: edit_supplier_path(supplier), destroy_name: "#{supplier.name}" %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Supplier', new_supplier_path %>
+<div class="action-buttons">
+  <%= render 'shared/link_button', text: 'New Supplier', path: new_supplier_path %>
+</div>

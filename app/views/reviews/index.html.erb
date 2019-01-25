@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Reviews</h1>
 
 <table>
@@ -10,7 +8,7 @@
       <th>Rating</th>
       <th>State</th>
       <th>Customer</th>
-      <th colspan="3"></th>
+      <%= render 'shared/table_actions_theaders' %>
     </tr>
   </thead>
 
@@ -22,14 +20,12 @@
         <td><%= review.rating %></td>
         <td><%= review.state %></td>
         <td><%= review.customer.display_name %></td>
-        <td><%= link_to 'Show', review %></td>
-        <td><%= link_to 'Edit', edit_review_path(review) %></td>
-        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%= render 'shared/table_action_rows', item: review, edit_path: edit_review_path(review), destroy_name: "the review for '#{review.book.title},' from #{review.customer.display_name}" %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Revies', new_review_path %>
+<div class="action-buttons">
+  <%= render 'shared/link_button', text: 'New Review', path: new_review_path %>
+</div>

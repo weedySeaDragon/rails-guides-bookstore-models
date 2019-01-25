@@ -2,5 +2,4 @@
 
 <%= render 'form', order: @order %>
 
-<%= link_to 'Show', @orders %> |
-<%= link_to 'Back', orders_path %>
+<%= render 'shared/action_buttons_show_back', item: 'order', show_path: @order, items: 'orders', back_to_path: orders_path %>
