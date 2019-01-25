@@ -22,7 +22,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @book.price %>
+  <%= number_with_precision(@book.price, precision: 2) %>
 </p>
 
 <p>

@@ -22,7 +22,11 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= tag.input(value: number_with_precision( @book.price, precision: 2),
+                  id: 'book_price',
+                  type: 'number',
+                  class: %w( price ),
+                  name: 'book[price]')  %>
   </div>
 
   <div class="field">

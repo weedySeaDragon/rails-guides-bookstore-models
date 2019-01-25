@@ -22,22 +22,39 @@
 
   <div class="field">
     <%= form.label :subtotal %>
-    <%= form.text_field :subtotal %>
+    <%= tag.input(value: number_with_precision(@order.subtotal, precision: 2),
+                  id: 'order_subtotal',
+                  type: 'number',
+                  class: %w( subtotal price ),
+                  name: 'order[subtotal]')  %>
   </div>
 
   <div class="field">
     <%= form.label :shipping %>
-    <%= form.text_field :shipping %>
+    <%= tag.input(value: number_with_precision(@order.shipping, precision: 2),
+                   id: 'order_shipping',
+                  type: 'number',
+                   class: %w( shipping price ),
+                   name: 'order[shipping]')  %>
   </div>
+
 
   <div class="field">
     <%= form.label :tax %>
-    <%= form.text_field :tax %>
+    <%= tag.input(value: number_with_precision(@order.tax, precision: 2),
+                  id: 'order_tax',
+                  type: 'number',
+                  class: %w( tax price ),
+                  name: 'order[tax]')  %>
   </div>
 
   <div class="field">
     <%= form.label :total %>
-    <%= form.text_field :total %>
+    <%= tag.input(value: number_with_precision(@order.total, precision: 2),
+                  id: 'order_total',
+                  type: 'number',
+                  class: %w( total price ),
+                  name: 'order[total]')  %>
   </div>
 
   <div class="actions">

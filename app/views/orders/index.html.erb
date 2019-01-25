@@ -3,13 +3,13 @@
 <table>
   <thead>
     <tr>
-      <th>Date submitted</th>
-      <th>Customer</th>
-      <th>Status</th>
-      <th>Subtotal</th>
-      <th>Shipping</th>
-      <th>Tax</th>
-      <th>Total</th>
+      <th class="date_submitted">Date submitted</th>
+      <th class="customer">Customer</th>
+      <th class="status">Status</th>
+      <th class="subtotal price">Subtotal</th>
+      <th class="shipping price">Shipping</th>
+      <th class="tax price">Tax</th>
+      <th class="total price">Total</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,13 +17,13 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-        <td><%= order.date_submitted %></td>
-        <td><%= order.customer.display_name %></td>
-        <td><%= order.status %></td>
-        <td><%= order.subtotal %></td>
-        <td><%= order.shipping %></td>
-        <td><%= order.tax %></td>
-        <td><%= order.total %></td>
+        <td class="date_submitted"><%= order.date_submitted %></td>
+        <td class="customer"><%= order.customer.display_name %></td>
+        <td class="status"><%= order.status %></td>
+        <td class="subtotal price"><%= number_with_precision(order.subtotal, precision: 2) %></td>
+        <td class="shipping price"><%= number_with_precision(order.shipping, precision: 2) %></td>
+        <td class="tax price"><%= number_with_precision(order.tax, precision: 2) %></td>
+        <td class="total price"><%= number_with_precision(order.total, precision: 2) %></td>
         <%= render 'shared/table_action_rows', item: order, edit_path: edit_order_path(order), destroy_name: "the order made on #{order.date_submitted} by #{order.customer.display_name}" %>
       </tr>
     <% end %>

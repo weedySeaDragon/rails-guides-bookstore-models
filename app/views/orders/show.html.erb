@@ -22,22 +22,22 @@
 
 <p>
   <strong>Subtotal:</strong>
-  <%= @order.subtotal %>
+  <%= number_with_precision(@order.subtotal, precision: 2) %>
 </p>
 
 <p>
   <strong>Shipping:</strong>
-  <%= @order.shipping %>
+  <%= number_with_precision(@order.shipping, precision: 2) %>
 </p>
 
 <p>
   <strong>Tax:</strong>
-  <%= @order.tax %>
+  <%= number_with_precision(@order.tax, precision: 2) %>
 </p>
 
 <p>
   <strong>Total:</strong>
-  <%= @order.total %>
+  <%= number_with_precision(@order.total, precision: 2) %>
 </p>
 
 

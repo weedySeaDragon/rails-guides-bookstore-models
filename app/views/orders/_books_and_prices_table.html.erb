@@ -9,7 +9,7 @@
   <% order.books.each do |book| %>
     <tr class="book">
       <td class="title"><%= book.title %></td>
-      <td class="price"><%= book.price %></td>
+      <td class="price"><%= number_with_precision(book.price, precision: 2) %></td>
     </tr>
   <% end %>
 </table>
