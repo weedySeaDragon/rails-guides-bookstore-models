@@ -23,13 +23,13 @@ class CSVDataLoader
   # data file names and location
   CSV_DATA_DIR = File.join(__dir__, 'csv_readers', 'csv_data')
 
-  AUTHORS_CSV      = 'authors-190124.csv'
-  BOOKS_CSV        = 'books-190124.csv'
-  CUSTOMERS_CSV    = 'customers-190124.csv'
-  ORDERS_CSV       = 'orders-190124.csv'
-  REVIEWS_CSV      = 'reviews-190124.csv'
-  SUPPLIERS_CSV    = 'suppliers-190124.csv'
-  BOOKS_ORDERS_CSV = 'books_orders-190124.csv'
+  AUTHORS_CSV      = 'authors-190124.csv'.freeze
+  BOOKS_CSV        = 'books-190124.csv'.freeze
+  CUSTOMERS_CSV    = 'customers-190124.csv'.freeze
+  ORDERS_CSV       = 'orders-190124.csv'.freeze
+  REVIEWS_CSV      = 'reviews-190124.csv'.freeze
+  SUPPLIERS_CSV    = 'suppliers-190124.csv'.freeze
+  BOOKS_ORDERS_CSV = 'books_orders-190124.csv'.freeze
 
 
   # For each Class, we have a CSV data source

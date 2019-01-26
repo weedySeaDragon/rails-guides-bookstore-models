@@ -1,7 +1,7 @@
 module ApplicationHelper
 
-  RAILS_GUIDES_URL  = "https://guides.rubyonrails.org/"
-  AR_QUERYING_GUIDE = 'active_record_querying.html'
+  RAILS_GUIDES_URL  = "https://guides.rubyonrails.org/".freeze
+  AR_QUERYING_GUIDE = 'active_record_querying.html'.freeze
 
 
   def bootstrap_class_for(flash_type)
