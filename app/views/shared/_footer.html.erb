@@ -3,6 +3,10 @@
     <span>© <%= Date.today.year %> Ashley Engelund</span>
 
     <ul class="list-inline mb-0 float-right">
+      <li class="list-inline-item mr-3"><%= extern_link("Rails Guides", "https://guides.rubyonrails.org/index.html") %> </li>
+
+      <li class="list-inline-item mr-3"><%= link_to "Diagram of the models", models_diagram_path %> </li>
+
       <li class="list-inline-item mr-3"><%= link_to "Terms", terms_path %></li>
 
        <li class="list-inline-item mr-3"><%= link_to "About", about_path %> </li>
