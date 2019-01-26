@@ -11,4 +11,7 @@ class HomeController < ApplicationController
   def about
   end
 
+  def models_diagram
+  end
+
 end
