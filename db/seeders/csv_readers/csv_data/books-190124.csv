@@ -17,3 +17,4 @@ id,title,year_published,isbn,price,out_of_print,views,author_id,supplier_id,crea
 16,Game Design Workshop: A Playcentric Approach to Creating Innovative Games,2018,,66.00,0,832,10,3,2019-01-24 12:10:27.831350,2019-01-24 12:10:27.831350
 17,Peopleware: Productive Projects and Teams,2013,,38.00,0,104,11,2,2019-01-24 12:10:27.836089,2019-01-24 12:10:27.836089
 18,Extreme Programming Explained: Embrace Change,2004,,43.00,0,5,12,10,2019-01-24 12:10:27.840629,2019-01-24 12:10:27.840629
+20,Practical Object-Oriented Design: An Agile Primer Using Ruby (2nd Edition),2018,978-0134456478,36.91,0,109,13,4,2019-09-01 12:10:27.840629,2018-09-02 12:10:27.840629
