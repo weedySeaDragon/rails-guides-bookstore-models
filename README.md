@@ -2,6 +2,7 @@
  
 ### for the [Active Record Query Inteface Rails Guide](https://guides.rubyonrails.org/active_record_querying.html)
 
+_These models are actually for [a PR submitted for the guide so that just one set of models is used for all examples.](https://github.com/rails/rails/pull/35008)  If the PR is accepted, then these will match up with what the guide says._
 
 I created this to help people run and understand the examples in the Rails
   Guide. I want to save people --
