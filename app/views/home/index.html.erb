@@ -1,2 +1,40 @@
-<h1>Welcome to Jumpstart!</h1>
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<h1>Bookstore Models and Data</h1>
+  <h3>for the <em>Active Record Querying Interface</em> Rails Guide</h3>
+
+<p class="lead">I created this to help people run and understand the examples in
+  <%= extern_link "the Rails Guide.", ar_querying_guide_url %></p>
+
+<p><strong>The goal is to present the models with just enough data so the examples can be
+  run and explored.</strong></p>
+
+<p>I want people to have a chance to work with the "Bookstore models" (Author, Books,
+  Customer, Order, Review, Supplier)
+  used in the  <%=  extern_link "Rails Guide: ActiveRecord Querying Interface.", ar_querying_guide_url %>
+  I want to save people --
+  especially <em>novices</em> who are coming up many learning curves at once -- the time and effort
+  needed to figure out exactly how to define and scaffold the models used in the
+  examples.</p>
+
+<p><strong>This is a very simple, bare-bones Rails application.
+  Clone this repo, seed it with data, and start working with the
+  examples.</strong></p>
+
+<ul>
+  <li>Use the <code>rails console</code> to run the queries given in the examples in the
+    guide.</li>
+  <li>Run <code>rails server</code> to the see the data in on web pages. (These use typical scaffold-ed views. I did a tiny bit of formatting where helpful.)</li>
+  <li>Run <code>bin/rails ae:railsguides:reseed</code> to reload the data. (This will delete all the data and reload it with seeded data from CSV files.)</li>
+</ul>
+
+
+<p>This is <em>not</em> a complete or efficient Rails application.
+  Only very minimal layout (view) work was done.
+  (In a more realistic Rails application, lots of DRYing up would be done; more gems would
+  be used; I18n would be used, etc. Many of the models have methods and scopes that are there only to illustrate concepts or code.  They wouldn't necessarily be designed like that in a real Rails application.)</p>
+<p>This is meant just as a starting point.</p>
+
+<p>Is this helpful? How could it be made <em>more</em> helpful? Please post comments and suggestions to the <%= extern_link "Github repo issues queue.", "https://github.com/weedySeaDragon/rails-guides-bookstore-models" %></p>
+
+<p><span class="shoutout">Shoutout:</span> This uses CSS and some basics from Chris Oliver's <em>Jumpstart template.</em>
+  <%= extern_link "You can grab the code yourself and watch his video on how to use it.",
+  "https://gorails.com/episodes/rails-application-templates" %></p>
