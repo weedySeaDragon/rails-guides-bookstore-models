@@ -29,6 +29,11 @@ body .container {
   padding-bottom: 2rem;
 }
 
+body nav .container {
+  padding-bottom: 0;
+}
+
+
 .price {
   text-align: right;
 }
@@ -66,7 +71,16 @@ footer {
   font-size: 0.85rem;
 }
 
+.lead {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .external-link {
   padding: 0.1rem;
   font-size: 70%;
+}
+
+.shoutout {
+  font-weight: bold;
 }
