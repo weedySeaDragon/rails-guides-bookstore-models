@@ -40,12 +40,11 @@ Read more about the details and intention on [the home page when you run this as
    (This uses SqlLite3.  If you want to use a different database, be sure to update the gem in the `Gemfile` and update the database settings.)
    [Read more about setting up your database in the Getting Started Rails Guide](https://guides.rubyonrails.org/getting_started.html)
    
-2. Create the database with `bin/rails db:create`
+2. `bin/rails db:setup` creates the database, runs the migrations, and seeds it with the example data. 
    
-2. Run the migrations to create the tables in the database: `bin/rails db:migrate`
-   [Read more about migrations in the Active Record Migrations Rails Guide](https://guides.rubyonrails.org/active_record_migrations.html)
-    
-3. Load the sample data with `bin/rails db:seed`
+2. Use the `rails console` to run the examples from the guide.
+   
+3. Run it as a local web application with `rails server` to see the data in web page views.  
   
 
 ## Bookstore models
