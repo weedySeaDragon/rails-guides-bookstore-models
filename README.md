@@ -4,8 +4,8 @@
 
 _These models are actually for [a pull request (PR) submitted for the guide so that just one set of models is used for all examples.](https://github.com/rails/rails/pull/35008)  If the PR is accepted, then these will match up with what the guide says._
 
-**[Here's the content of the guide as modified by the PR](./guides/source/active_record_querying.md)** so that it's easier to read for now.  Note this is just the markdown (.md). It's still readable, just plain.  Please submit any feedback in the [PR.](https://github.com/rails/rails/pull/35008)
-
+**Clone this repo to get a very simple Rails app with data that you can use to run the examples in the guide. [Use this draft version of the guide; it's the one with my proposed changed (based on the PR).](./guides/source/active_record_querying.md)**  Detailed installation instructions are in the [Installation and Use](installation-and-use) section below.
+ 
 I created this to help people run and understand the examples in the Rails
   Guide. I want to save people --
            especially <em>novices</em> who are coming up many learning curves at once -- the time and effort
@@ -14,6 +14,12 @@ I created this to help people run and understand the examples in the Rails
 
 **The goal is to present the models with just enough data so the examples can be
   run and explored.**
+  
+  - [Dependencies](#dependencies)
+  - [Installation and Use](installation-and-use)
+  - [Bookstore models diagram](bookstore-models)
+  - [Giving Feedback](giving-feedback)
+  
 
 _This is a first draft.  The data does not yet match the example results in the guide exactly._
 
@@ -55,9 +61,10 @@ Read more about the details and intention on [the home page when you run this as
 
 
 
-## Feedback
-Is this helpful? How could it be made _more_ helpful? Please post comments and suggestions to the [Github repo issues queue.](https://github.com/weedySeaDragon/rails-guides-bookstore-models)
-   
+## Giving Feedback
+Is this helpful? How could it be made _more_ helpful? Please post comments and suggestions about the models and using them in the [Github repo issues queue.](https://github.com/weedySeaDragon/rails-guides-bookstore-models)
+If you have feedback about *the guide,* please post your comments in [the Rails github repo.](https://github.com/rails/rails) 
+
 
 
 ## MIT License
