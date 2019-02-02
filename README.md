@@ -1,8 +1,10 @@
 # Bookstore Models and Data
  
-### for the [Active Record Query Inteface Rails Guide](https://guides.rubyonrails.org/active_record_querying.html)
+### for the [Rails Active Record Query Inteface Guide](https://guides.rubyonrails.org/active_record_querying.html)
 
-_These models are actually for [a PR submitted for the guide so that just one set of models is used for all examples.](https://github.com/rails/rails/pull/35008)  If the PR is accepted, then these will match up with what the guide says._
+_These models are actually for [a pull request (PR) submitted for the guide so that just one set of models is used for all examples.](https://github.com/rails/rails/pull/35008)  If the PR is accepted, then these will match up with what the guide says._
+
+**[Here's the content of the guide as modified by the PR](./guides/source/active_record_querying.md)** so that it's easier to read for now.  Note this is just the markdown (.md). It's still readable, just plain.  Please submit any feedback in the [PR.](https://github.com/rails/rails/pull/35008)
 
 I created this to help people run and understand the examples in the Rails
   Guide. I want to save people --
