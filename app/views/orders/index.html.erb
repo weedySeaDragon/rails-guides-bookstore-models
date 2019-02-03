@@ -24,12 +24,12 @@
         <td class="shipping price"><%= number_to_currency(order.shipping) %></td>
         <td class="tax price"><%= number_to_currency(order.tax) %></td>
         <td class="total price"><%= number_to_currency(order.total) %></td>
-        <%= render 'shared/table_action_rows', item: order, edit_path: edit_order_path(order), destroy_name: "the order made on #{order.date_submitted} by #{order.customer.display_name}" %>
+        <%= render 'table_action_rows', item: order, edit_path: edit_order_path(order), destroy_name: "the order made on #{order.date_submitted} by #{order.customer.display_name}" %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <div class="action-buttons">
-  <%= render 'shared/link_button', text: 'New Order', path: new_order_path %>
+  <%= render 'link_button', text: 'New Order', path: new_order_path %>
 </div>
