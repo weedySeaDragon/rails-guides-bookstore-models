@@ -19,7 +19,7 @@
       <tr>
         <td class="date_submitted"><%= order.date_submitted %></td>
         <td class="customer"><%= order.customer.display_name %></td>
-        <td class="status"><%= order.status %></td>
+        <td class="status"><%= order.status.humanize %></td>
         <td class="subtotal price"><%= number_to_currency(order.subtotal) %></td>
         <td class="shipping price"><%= number_to_currency(order.shipping) %></td>
         <td class="tax price"><%= number_to_currency(order.tax) %></td>
