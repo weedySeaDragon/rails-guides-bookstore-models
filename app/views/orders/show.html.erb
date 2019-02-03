@@ -22,22 +22,22 @@
 
 <p>
   <strong>Subtotal:</strong>
-  <%= number_with_precision(@order.subtotal, precision: 2) %>
+  <%= number_to_currency(@order.subtotal) %>
 </p>
 
 <p>
   <strong>Shipping:</strong>
-  <%= number_with_precision(@order.shipping, precision: 2) %>
+  <%= number_to_currency(@order.shipping) %>
 </p>
 
 <p>
   <strong>Tax:</strong>
-  <%= number_with_precision(@order.tax, precision: 2) %>
+  <%= number_to_currency(@order.tax) %>
 </p>
 
 <p>
   <strong>Total:</strong>
-  <%= number_with_precision(@order.total, precision: 2) %>
+  <%= number_to_currency(@order.total) %>
 </p>
 
 

@@ -22,7 +22,7 @@
 
   <div class="field">
     <%= form.label :price %>
-    <%= tag.input(value: number_with_precision( @book.price, precision: 2),
+    <%= tag.input(value: number_to_currency( @book.price),
                   id: 'book_price',
                   type: 'number',
                   class: %w( price ),

@@ -20,10 +20,10 @@
         <td class="date_submitted"><%= order.date_submitted %></td>
         <td class="customer"><%= order.customer.display_name %></td>
         <td class="status"><%= order.status %></td>
-        <td class="subtotal price"><%= number_with_precision(order.subtotal, precision: 2) %></td>
-        <td class="shipping price"><%= number_with_precision(order.shipping, precision: 2) %></td>
-        <td class="tax price"><%= number_with_precision(order.tax, precision: 2) %></td>
-        <td class="total price"><%= number_with_precision(order.total, precision: 2) %></td>
+        <td class="subtotal price"><%= number_to_currency(order.subtotal) %></td>
+        <td class="shipping price"><%= number_to_currency(order.shipping) %></td>
+        <td class="tax price"><%= number_to_currency(order.tax) %></td>
+        <td class="total price"><%= number_to_currency(order.total) %></td>
         <%= render 'shared/table_action_rows', item: order, edit_path: edit_order_path(order), destroy_name: "the order made on #{order.date_submitted} by #{order.customer.display_name}" %>
       </tr>
     <% end %>
