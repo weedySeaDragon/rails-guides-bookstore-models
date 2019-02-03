@@ -6,7 +6,7 @@
       <th>Title</th>
       <th>First name</th>
       <th>Last name</th>
-      <%= render 'shared/table_actions_theaders' %>
+      <%= render 'table_actions_theaders' %>
     </tr>
   </thead>
 
@@ -16,7 +16,7 @@
         <td><%= author.title %></td>
         <td><%= author.first_name %></td>
         <td><%= author.last_name %></td>
-        <%= render 'shared/table_action_rows', item: author, edit_path: edit_author_path(author), destroy_name: author.display_name %>
+        <%= render 'table_action_rows', item: author, edit_path: edit_author_path(author), destroy_name: author.display_name %>
 
       </tr>
     <% end %>
@@ -24,5 +24,5 @@
 </table>
 
 <div class="action-buttons">
-  <%= render 'shared/link_button', text: 'New Author', path: new_author_path %>
+  <%= render 'link_button', text: 'New Author', path: new_author_path %>
 </div>
