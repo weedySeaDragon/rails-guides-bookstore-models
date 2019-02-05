@@ -4,7 +4,7 @@
   <thead class="thead-dark">
     <tr>
       <th>Name</th>
-      <%= render 'table_actions_theaders' %>
+      <%= render 'shared/table_actions_theaders' %>
     </tr>
   </thead>
 
@@ -12,12 +12,12 @@
     <% @suppliers.each do |supplier| %>
       <tr>
         <td><%= supplier.name %></td>
-        <%= render 'table_action_rows', item: supplier, edit_path: edit_supplier_path(supplier), destroy_name: "#{supplier.name}" %>
+        <%= render 'shared/table_action_rows', item: supplier, edit_path: edit_supplier_path(supplier), destroy_name: "#{supplier.name}" %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <div class="action-buttons">
-  <%= render 'link_button', text: 'New Supplier', path: new_supplier_path %>
+  <%= render 'shared/link_button', text: 'New Supplier', path: new_supplier_path %>
 </div>

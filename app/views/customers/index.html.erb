@@ -9,7 +9,7 @@
       <th>Orders count</th>
       <th>Visits</th>
       <th>Lock version</th>
-      <%= render 'table_actions_theaders' %>
+      <%= render 'shared/table_actions_theaders' %>
     </tr>
   </thead>
 
@@ -23,12 +23,12 @@
         <td><%= customer.orders_count %></td>
         <td><%= customer.visits %></td>
         <td><%= customer.lock_version %></td>
-        <%= render 'table_action_rows', item: customer, edit_path: edit_customer_path(customer), destroy_name: customer.display_name %>
+        <%= render 'shared/table_action_rows', item: customer, edit_path: edit_customer_path(customer), destroy_name: customer.display_name %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <div class="action-buttons">
-  <%= render 'link_button', text: 'New Customer', path: new_customer_path %>
+  <%= render 'shared/link_button', text: 'New Customer', path: new_customer_path %>
 </div>

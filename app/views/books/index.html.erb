@@ -11,7 +11,7 @@
     <th>Out of print?</th>
     <th>Views</th>
     <th>Supplier</th>
-    <%= render 'table_actions_theaders' %>
+    <%= render 'shared/table_actions_theaders' %>
   </tr>
   </thead>
 
@@ -27,7 +27,7 @@
       <td><%= book.views %></td>
       <td><%= book.supplier.name %></td>
 
-      <%= render 'table_action_rows', item: book, edit_path: edit_book_path(book), destroy_name: book.title %>
+      <%= render 'shared/table_action_rows', item: book, edit_path: edit_book_path(book), destroy_name: book.title %>
     </tr>
   <% end %>
   </tbody>
@@ -35,5 +35,5 @@
 
 
 <div class="action-buttons">
-  <%= render 'link_button', text: 'New Book', path: new_book_path %>
+  <%= render 'shared/link_button', text: 'New Book', path: new_book_path %>
 </div>

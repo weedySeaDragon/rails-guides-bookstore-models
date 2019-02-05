@@ -8,7 +8,7 @@
       <th>Rating</th>
       <th>State</th>
       <th>Customer</th>
-      <%= render 'table_actions_theaders' %>
+      <%= render 'shared/table_actions_theaders' %>
     </tr>
   </thead>
 
@@ -20,12 +20,12 @@
         <td><%= review.rating %></td>
         <td><%= review.state.humanize.downcase %></td>
         <td><%= review.customer.display_name %></td>
-        <%= render 'table_action_rows', item: review, edit_path: edit_review_path(review), destroy_name: "the review for '#{review.book.title},' from #{review.customer.display_name}" %>
+        <%= render 'shared/table_action_rows', item: review, edit_path: edit_review_path(review), destroy_name: "the review for '#{review.book.title},' from #{review.customer.display_name}" %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <div class="action-buttons">
-  <%= render 'link_button', text: 'New Review', path: new_review_path %>
+  <%= render 'shared/link_button', text: 'New Review', path: new_review_path %>
 </div>

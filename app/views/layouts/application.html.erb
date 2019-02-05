@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= render 'head' %>
+    <%= render 'shared/head' %>
   </head>
 
   <body class="<%= "#{controller.controller_name} #{controller.action_name}" %>" >
-  <%= render 'navbar' %>
-  <%= render 'notices' %>
+  <%= render 'shared/navbar' %>
+  <%= render 'shared/notices' %>
 
   <div class="container">
     <%= yield %>
   </div>
 
-  <%= render 'footer' %>
+  <%= render 'shared/footer' %>
   </body>
 </html>
