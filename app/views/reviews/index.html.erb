@@ -1,7 +1,7 @@
 <h1>Reviews</h1>
 
-<table>
-  <thead>
+<table class="table table-sm table-striped">
+  <thead class="thead-dark">
     <tr>
       <th>Book</th>
       <th>Title</th>
@@ -18,7 +18,7 @@
         <td><%= review.book.title %></td>
         <td><%= review.title %></td>
         <td><%= review.rating %></td>
-        <td><%= review.state %></td>
+        <td><%= review.state.humanize.downcase %></td>
         <td><%= review.customer.display_name %></td>
         <%= render 'shared/table_action_rows', item: review, edit_path: edit_review_path(review), destroy_name: "the review for '#{review.book.title},' from #{review.customer.display_name}" %>
       </tr>
