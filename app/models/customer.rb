@@ -2,8 +2,6 @@ class Customer < ApplicationRecord
   has_many :orders
   has_many :reviews
 
-  scope :frequent_buyers, -> { where 'orders_count > 150' }
-
   include Person
 
 
