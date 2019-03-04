@@ -1,12 +1,12 @@
 <h1>Books</h1>
 
-<table>
-  <thead>
+<table class="table table-sm table-striped" id="tbl-books">
+  <thead class="thead-dark">
   <tr>
     <th>Title</th>
     <th>Author</th>
     <th>Year published</th>
-    <th>Isbn</th>
+    <th>ISBN</th>
     <th>Price</th>
     <th>Out of print?</th>
     <th>Views</th>
@@ -22,7 +22,7 @@
       <td><%= book.author.display_name %></td>
       <td><%= book.year_published %></td>
       <td><%= book.isbn %></td>
-      <td><%= number_with_precision(book.price, precision: 2) %></td>
+      <td><%= number_to_currency(book.price) %></td>
       <td><%= book.out_of_print %></td>
       <td><%= book.views %></td>
       <td><%= book.supplier.name %></td>
