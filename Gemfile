@@ -61,7 +61,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Site Design:
-gem 'bootstrap', '~> 4.1', '>= 4.1.1'
+gem 'bootstrap', ">= 4.3.1"
 gem 'data-confirm-modal', '~> 1.6', '>= 1.6.2'
 gem 'font-awesome-sass', '~> 5.5', '>= 5.5.0.1'
 gem 'jquery-rails', '~> 4.3.1'
