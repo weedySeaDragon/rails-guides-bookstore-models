@@ -2,7 +2,7 @@ policy:
   - template: [bug_mermaid.yml]
     section:
       - id: [topic_documentation]
-        block-list['No']
+        block-list: ['No']
         label:
           - name: 'documentation'
             keys: ['Yes']
