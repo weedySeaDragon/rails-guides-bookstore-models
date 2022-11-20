@@ -20,7 +20,4 @@ jobs:
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
           section: topic_documentation
-          block-list: |
-            None
-            Other
           token: ${{ secrets.GITHUB_TOKEN }}
