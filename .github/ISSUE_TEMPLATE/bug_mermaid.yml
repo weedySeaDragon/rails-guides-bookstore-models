@@ -7,6 +7,7 @@ labels: ["mermaid", "bug", "triage"]
 body:
 - type: markdown
   attributes:
+    label: overview
     value: |-
       ## Security vulnerabilities
       Please refer our [Security Policy](https://github.com/mermaid-js/.github/blob/main/SECURITY.md) and report to keep vulnerabilities confidential so we can release fixes first.
@@ -28,7 +29,7 @@ body:
   validations:
     required: true
 - type: checkboxes
-  id: topic_documentation
+  id: topic_diagrams
   attributes:
     label: Please check any and all diagrams invovled.
     options:
@@ -45,7 +46,7 @@ body:
 
 - type: textarea
   attributes:
-    label: Description
+    label: Description 
     description: Give a clear and concise description of what the bug is.
     placeholder: When I do ... does ... happen.
   validations:
