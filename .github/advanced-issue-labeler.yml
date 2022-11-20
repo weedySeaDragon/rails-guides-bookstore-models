@@ -8,7 +8,7 @@ policy:
             keys: []
           - name: 'documentation'
             keys: ['Yes']
-      - id: [topic_diagrams]
+      - id: [diagrams]
         block-list: ['None']
         label:
           - name: 'diagram-c4'
