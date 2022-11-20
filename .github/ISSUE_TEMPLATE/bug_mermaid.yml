@@ -30,11 +30,12 @@ body:
       - 'Yes'
   validations:
     required: true
-- type: checkboxes
+- type: dropdown
   id: topic_diagrams
   attributes:
     label: Please check any and all diagrams invovled.
     options:
+      - label: C4 diagram
       - label: Class diagram
       - label: Entity Relationship (ER) diagram
       - label: Flowchart
@@ -44,6 +45,7 @@ body:
       - label: Requirements
       - label: Sequence
       - label: State diagram
+      - label: User Journey diagram
       - label: All diagrams
     
     
