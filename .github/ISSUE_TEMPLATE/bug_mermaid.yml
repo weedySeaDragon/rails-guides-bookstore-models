@@ -24,7 +24,7 @@ body:
 - type: dropdown
   id: topic_documentation
   attributes:
-    label: "Does the problem also involve the documentation?" \ 
+    label: "Does the problem also involve the documentation?"
     options:
       - 'No'
       - 'Yes'
