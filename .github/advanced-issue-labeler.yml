@@ -7,34 +7,33 @@ policy:
           - name: 'documentation'
             keys: ['Yes']
   
-  - template: [bug_mermaid.yml]
-    section:            
+         
       - id: [diagrams]
         block-list: ['None']
         label:
-          - name: 'diagram-c4'
+          - name: 'diagram: c4'
             keys: ['C4 diagram']
-          - name: 'diagram-class'
+          - name: 'diagram: class'
             keys: ['Class diagram']
-          - name: 'diagram-er'
+          - name: 'diagram: er'
             keys: ['Entity Relationship (ER) diagram']
-          - name: 'diagram-flowchart'
+          - name: 'diagram: flowchart'
             keys: ['Flowchart']
-          - name: 'diagram-gantt'
+          - name: 'diagram: gantt'
             keys: ['Gantt']
-          - name: 'diagram-git'
+          - name: 'diagram: git'
             keys: ['Git']
           - name: 'diagram-pie'
             keys: ['Pie']
-          - name: 'diagram-requirements'
+          - name: diagram-requirements
             keys: ['Requirements']
-          - name: 'diagram-sequence'
+          - name: diagram-sequence
             keys: ['Sequence']
-          - name: 'diagram-state'
+          - name: diagram-state
             keys: ['State diagram']
-          - name: 'diagram-user-journey'
+          - name: diagram-user-journey
             keys: ['User journey']
-          - name: 'diagram-all'
+          - name: diagram-all
             keys: ['All diagrams']
         
-        
+       
