@@ -1,13 +1,14 @@
 policy:
-  - section:
+  - template: [bug_mermaid.yml]
+    section:
       - id: [topic_documentation]
-        block-list: []
+        block-list['No']
         label:
-          - name: 'No'
-            keys: []
           - name: 'documentation'
             keys: ['Yes']
-  - section:            
+  
+  - template: [bug_mermaid.yml]
+    section:            
       - id: [diagrams]
         block-list: ['None']
         label:
