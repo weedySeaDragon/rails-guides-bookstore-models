@@ -30,10 +30,11 @@ body:
       - 'Yes'
   validations:
     required: true
+
 - type: dropdown
   id: topic_diagrams
   attributes:
-    label: Please check any and all diagrams invovled.
+    label: "Please check any and all diagrams invovled."
     options:
       - label: 'C4 diagram'
       - label: 'Class diagram'
@@ -47,8 +48,7 @@ body:
       - label: 'State diagram'
       - label: 'User Journey diagram'
       - label: 'All diagrams'
-    
-    
+        
 - type: textarea
   attributes:
     label: Steps to reproduce
