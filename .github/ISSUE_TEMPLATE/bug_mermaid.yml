@@ -3,11 +3,9 @@ name: Mermaid Bug report
 description: Create a bug report to help us improve
 title: "[Bug]: "
 labels: ["mermaid", "bug", "triage"]
-
 body:
 - type: markdown
   attributes:
-    label: overview
     value: |-
       ## Security vulnerabilities
       Please refer our [Security Policy](https://github.com/mermaid-js/.github/blob/main/SECURITY.md) and report to keep vulnerabilities confidential so we can release fixes first.
