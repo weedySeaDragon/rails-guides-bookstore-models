@@ -19,5 +19,14 @@ jobs:
         uses: redhat-plumbers-in-action/advanced-issue-labeler@latest
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
+          template: bug_mermaid.yml
           section: topic_documentation
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set diagram type label from topic_documentation
+        uses: redhat-plumbers-in-action/advanced-issue-labeler@latest
+        with:
+          issue-form: ${{ steps.issue-parser.outputs.jsonString }}
+          template: bug_mermaid.yml
+          section: diagrams
           token: ${{ secrets.GITHUB_TOKEN }}
