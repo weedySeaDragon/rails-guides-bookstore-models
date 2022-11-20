@@ -24,7 +24,8 @@ body:
 - type: dropdown
   id: topic_documentation
   attributes:
-    label: "Does the problem also involve the documentation?"
+    label: Documentation
+    description: "Does the problem also involve the documentation?"
     options:
       - 'No'
       - 'Yes'
@@ -34,7 +35,8 @@ body:
 - type: dropdown
   id: diagrams
   attributes:
-    label: "Please check any and all diagrams invovled."
+    label: Diagrams
+    description: "Please check any and all diagrams invovled."
     options:
       - 'C4 diagram'
       - 'Class diagram'
