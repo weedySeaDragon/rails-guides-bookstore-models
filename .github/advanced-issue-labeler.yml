@@ -1,26 +1,39 @@
-name: Issue labeler
-on:
-  issues:
-    types: [ opened ]
-
-jobs:
-  label-component:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Parse issue form
-        uses: stefanbuck/github-issue-parser@v2
-        id: issue-parser
-        with:
-          template-path: .github/ISSUE_TEMPLATE/bug_mermaid.yml
-
-      - name: Set documentation label if topic_documentation = 'Yes'
-        uses: redhat-plumbers-in-action/advanced-issue-labeler@latest
-        with:
-          issue-form: ${{ steps.issue-parser.outputs.jsonString }}
-          section: topic_documentation
-          block-list: |
-            None
-            Other
-          token: ${{ secrets.GITHUB_TOKEN }}
+policy:
+  - template: ['bug_mermiad.yml']
+    section:
+      - id: ['topic_documentation']
+        block-list: []
+        label:
+          - name: 'No'
+            keys: []
+          - name: 'documentation'
+            keys: ['Yes']
+      - id: [topic_diagrams]
+        block-list: ['None']
+        label:
+          - name: 'diagram-c4'
+            keys: ['C4 diagram']
+          - name: 'diagram-class'
+            keys: ['Class diagram']
+          - name: 'diagram-er'
+            keys: ['Entity Relationship (ER) diagram']
+          - name: 'diagram-flowchart'
+            keys: ['Flowchart']
+          - name: 'diagram-gantt'
+            keys: ['Gantt']
+          - name: 'diagram-git'
+            keys: ['Git']
+          - name: 'diagram-pie'
+            keys: ['Pie']
+          - name: 'diagram-requirements'
+            keys: ['Requirements']
+          - name: 'diagram-sequence'
+            keys: ['Sequence']
+          - name: 'diagram-state'
+            keys: ['State diagram']
+          - name: 'diagram-user-journey'
+            keys: ['User journey']
+          - name: 'diagram-all'
+            keys: ['All diagrams']
+        
+        
