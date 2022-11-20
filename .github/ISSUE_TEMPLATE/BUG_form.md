@@ -1,13 +1,18 @@
 ---
 name: Mermaid bug template
 about: New Bug form for Mermaid. includes checkboxes for which diagrams are involved.
-title: 'New bug mermaid'
+title: 'Mermaid new bug '
 labels:
   - 'Status: Triage'
   - 'Type: Bug / Error'
 ---
 
-description: Create a report to help us improve
+name: Mermaid bug template
+description: Memaid File a bug report to help us improve
+name: Mermaid Bug Report
+description: File a mermaid bug report
+title: "[Bug]: "
+labels: ["mermaid", "bug", "triage"]
 
 body:
   - type: markdown
