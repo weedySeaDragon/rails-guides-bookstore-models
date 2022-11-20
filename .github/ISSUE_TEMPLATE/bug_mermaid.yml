@@ -35,18 +35,18 @@ body:
   attributes:
     label: Please check any and all diagrams invovled.
     options:
-      - label: C4 diagram
-      - label: Class diagram
-      - label: Entity Relationship (ER) diagram
-      - label: Flowchart
-      - label: Gantt
-      - label: Git
-      - label: Pie
-      - label: Requirements
-      - label: Sequence
-      - label: State diagram
-      - label: User Journey diagram
-      - label: All diagrams
+      - label: 'C4 diagram'
+      - label: 'Class diagram'
+      - label: 'Entity Relationship (ER) diagram'
+      - label: 'Flowchart'
+      - label: 'Gantt'
+      - label: 'Git'
+      - label: 'Pie'
+      - label: 'Requirements'
+      - label: 'Sequence'
+      - label: 'State diagram'
+      - label: 'User Journey diagram'
+      - label: 'All diagrams'
     
     
 - type: textarea
