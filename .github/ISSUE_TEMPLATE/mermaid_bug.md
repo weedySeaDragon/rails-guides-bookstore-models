@@ -1,7 +1,12 @@
-name: Mermaid Bug Report
-description: Memaid File a bug report to help us improve
+---
+name: Mermaid Bug report
+about: Create a bug report to help us improve
 title: "[Bug]: "
 labels: ["mermaid", "bug", "triage"]
+assignees: ''
+
+---
+
 
 body:
   - type: markdown
