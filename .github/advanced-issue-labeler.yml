@@ -1,13 +1,13 @@
 policy:
-  - template: ['bug_mermiad.yml']
-    section:
-      - id: ['topic_documentation']
+  - section:
+      - id: [topic_documentation]
         block-list: []
         label:
           - name: 'No'
             keys: []
           - name: 'documentation'
             keys: ['Yes']
+  - section:            
       - id: [diagrams]
         block-list: ['None']
         label:
