@@ -1,6 +1,6 @@
 
 name: Mermaid Bug report
-about: Create a bug report to help us improve
+description: Create a bug report to help us improve
 title: "[Bug]: "
 labels: ["mermaid", "bug", "triage"]
 
@@ -23,8 +23,8 @@ body:
     label: "Does the problem also involve the main documentation? \ 
       Ex: Choose 'Yes' if the issue is completely or partly about the documentation.  Choose 'Yes' if the documentation related to the issue is inaccurate or unclear."
     options:
-      - No
-      - Yes
+      - 'No'
+      - 'Yes'
   validations:
     required: true
 - type: checkboxes
