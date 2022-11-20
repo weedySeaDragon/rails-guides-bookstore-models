@@ -7,20 +7,24 @@ body:
 - type: markdown
   attributes:
     value: |-
-      ## Security vulnerabilities
-      Please refer our [Security Policy](https://github.com/mermaid-js/.github/blob/main/SECURITY.md) and report to keep vulnerabilities confidential so we can release fixes first.
-
       ## Before you submit...
       We like to help you, but in order to do that should you make a few things first:
 
       - Use a clear and concise title
       - Fill out the text fields with as much detail as possible.
       - Never be shy to give us screenshots and/or code samples. It will help!
+- type: textarea
+  attributes:
+    label: Description 
+    description: Give a clear and concise description of what the bug is.
+    placeholder: When I do ... does ... happen.
+  validations:
+    required: true
+    
 - type: dropdown
   id: topic_documentation
   attributes:
-    label: "Does the problem also involve the main documentation? \ 
-      Ex: Choose 'Yes' if the issue is completely or partly about the documentation.  Choose 'Yes' if the documentation related to the issue is inaccurate or unclear."
+    label: "Does the problem also involve the documentation?" \ 
     options:
       - 'No'
       - 'Yes'
@@ -41,14 +45,8 @@ body:
       - label: Sequence
       - label: State diagram
       - label: All diagrams
-
-- type: textarea
-  attributes:
-    label: Description 
-    description: Give a clear and concise description of what the bug is.
-    placeholder: When I do ... does ... happen.
-  validations:
-    required: true
+    
+    
 - type: textarea
   attributes:
     label: Steps to reproduce
