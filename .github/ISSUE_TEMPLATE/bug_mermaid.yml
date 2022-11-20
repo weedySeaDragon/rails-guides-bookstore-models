@@ -32,7 +32,7 @@ body:
     required: true
 
 - type: dropdown
-  id: topic_diagrams
+  id: diagrams
   attributes:
     label: "Please check any and all diagrams invovled."
     options:
