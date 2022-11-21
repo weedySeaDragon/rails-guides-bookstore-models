@@ -1,11 +1,16 @@
 name: Issue labeler
 on:
   issues:
-    types: [ opened, edited ]
+    types: [ opened ]
 
 jobs:
   label-component:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        template: [ bug_mermaid.yml ]
+    
     steps:
       - uses: actions/checkout@v3
 
@@ -13,18 +18,11 @@ jobs:
         uses: stefanbuck/github-issue-parser@v2
         id: issue-parser
         with:
-          template-path: .github/ISSUE_TEMPLATE/bug_mermaid.yml
+          template-path: .github/ISSUE_TEMPLATE/${{ matrix.template }}
 
-      - name: Set documentation label if topic_documentation = 'Yes'
-        uses: redhat-plumbers-in-action/advanced-issue-labeler@latest
+      - name: Set documentation label if topic_documentation = 'Yes' & Set diagram type label
+        uses: redhat-plumbers-in-action/advanced-issue-labeler@v2
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
-          section: topic_documentation
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set diagram type label from diagrams values
-        uses: redhat-plumbers-in-action/advanced-issue-labeler@latest
-        with:
-          issue-form: ${{ steps.issue-parser.outputs.jsonString }}
-          section: diagrams
+          template: ${{ matrix.template }}
           token: ${{ secrets.GITHUB_TOKEN }}
