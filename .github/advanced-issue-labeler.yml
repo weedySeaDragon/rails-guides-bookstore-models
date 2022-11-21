@@ -6,8 +6,7 @@ policy:
         label:
           - name: 'documentation'
             keys: ['Yes']
-  
-         
+
       - id: [diagrams]
         block-list: ['None']
         label:
@@ -35,5 +34,3 @@ policy:
             keys: ['User journey']
           - name: diagram-all
             keys: ['All diagrams']
-        
-       
